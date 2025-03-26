@@ -26,7 +26,7 @@ export const ourFileRouter = {
       const [user] = await db
         .select()
         .from(users)
-        .where(eq(users.clerkId, clerkUserId))
+        .where(eq(users.clerkId, clerkUserId));
 
         if (!user) throw new UploadThingError("Unauthorized");
 
@@ -66,8 +66,8 @@ export const ourFileRouter = {
         })
         .where(and(
           eq(videos.id, metadata.videoId),
-          eq(videos.userId, metadata.user.id),
-        ))
+          eq(videos.userId, metadata.user.id)
+        ));
       return { uploadedBy: metadata.user.id };
     }),
 } satisfies FileRouter;

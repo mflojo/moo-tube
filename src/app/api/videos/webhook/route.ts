@@ -61,7 +61,8 @@ export const POST = async (request: Request) => {
                     muxStatus: data.status,
                 })
                 .where(eq(videos.muxUploadId, data.upload_id));
-            break;
+            
+            return new Response("Video created", { status: 200 });
         }
 
         case "video.asset.ready": {
