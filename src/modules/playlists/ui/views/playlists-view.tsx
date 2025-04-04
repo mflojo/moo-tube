@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
-import { PlaylistCreateModal } from "../components/playllist-create-modal";
+import { PlaylistCreateModal } from "../components/playlist-create-modal";
 import { useState } from "react";
 import { PlaylistsSection } from "../sections/playlists-section";
 
