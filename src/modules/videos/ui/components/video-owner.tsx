@@ -18,7 +18,7 @@ export const VideoOwner = ({ user, videoId }: VideoOwnerProps) => {
         userId: user.id,
         isSubscribed: user.viewerSubscribed,
         fromVideoId: videoId
-    })
+    });
 
     return (
         <div className="flex items-center sm:items-start justify-between sm:justify-start gap-3 min-w-0">
