@@ -5,17 +5,12 @@ import { DEFAULT_LIMIT } from "@/constants";
 import { trpc } from "@/trpc/client";
 import { Loader2Icon, SquareCheckIcon, SquareIcon } from "lucide-react";
 import { toast } from "sonner";
-import { z } from "zod";
 
 interface PlaylistAddModalProps {
     open: boolean;
     onOpenChange: (open: boolean) => void;
     videoId: string;
 }
-
-const formSchema = z.object({
-    name: z.string().min(1),
-});
 
 export const PlaylistAddModal = ({
     open,
