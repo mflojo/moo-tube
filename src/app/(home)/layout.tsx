@@ -1,6 +1,5 @@
 import { HomeLayout } from "@/modules/home/ui/layouts/home-layout";
 
-//confirm if this is needed or not..
 export const dynamic = "force-dynamic";
 
 interface LayoutProps {
