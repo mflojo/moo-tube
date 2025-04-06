@@ -500,6 +500,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
 
                         </div>
                     </div>
+                    <p className="text-center mt-8 mb-8 text-red-500">*Wait for subtitle track to finish before trying AI gen tools*</p>
                 </form>
             </Form>
         </>
